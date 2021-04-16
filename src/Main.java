@@ -58,7 +58,7 @@ public class Main {
 				break;
 
 			default:
-				System.out.println("Has introducido una opción incorrecta");
+				System.out.println("Opcion incorrecta");
 				break;
 			}
 		} while (opc!=7);
