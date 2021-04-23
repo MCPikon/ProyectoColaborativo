@@ -18,14 +18,14 @@ public class Main {
 		
 		Scanner sn = new Scanner(System.in);
 		Scanner sc = new Scanner(System.in);
-		int opc = 0;
+		int opcion = 0;
 		String alias = "";
 		
 		leerArchivo(archivoUsuarios, empleados);
 		
 		do {
 			mostrarMenu();
-			opc=sn.nextInt();
+			opcion=sn.nextInt();
 			switch (opc) {
 			case 1:
 				numUsuariosTotales(empleados);
@@ -61,7 +61,7 @@ public class Main {
 				System.out.println("Opcion incorrecta");
 				break;
 			}
-		} while (opc!=7);
+		} while (opcion!=7);
 
 		escribirArchivo(archivoUsuarios, empleados);
 	}
